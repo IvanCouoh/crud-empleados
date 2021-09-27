@@ -1,6 +1,6 @@
 <?php
 
-class PaginaControl{
+class PagesControl{
     public function inicio(){
         include_once("views/pages/inicio.php");
     }
