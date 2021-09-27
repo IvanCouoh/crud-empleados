@@ -23,7 +23,7 @@
       <div class="container">
           <div class="row">
               <div class="col-12">
-                  Página pricipal utilizando git flow eeeeeeeeee
+                  <?php include_once("rutas.php");?>
               </div>
           </div>
       </div>
