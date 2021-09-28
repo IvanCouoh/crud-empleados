@@ -29,6 +29,6 @@
         </form>
     </div>
     <div class="card-footer text-muted">
-        Todos estos datos son protegidos, por... 
+        Todos estos datos son protegidos, <por class=""></por>
     </div>
 </div>
