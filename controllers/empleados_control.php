@@ -12,6 +12,7 @@ class empleadosControl{
             $correo=$_POST["correo"];
             $fecha=$_POST["fecha"];
             Empleado::crear($nombre,$correo,$fecha);
+            header("location:./?controller=empleados&action=inicio");
         }
 
         include_once("views/empleados/crear.php");
@@ -22,6 +23,12 @@ class empleadosControl{
 
         $empleados=Empleado::consultar();
         include_once("views/empleados/inicio.php");
+    }
+
+    public function borrar(){
+        $id=$_GET['id'];
+        Empleado::borrar($id);
+        header("location:./?controller=empleados&action=inicio");
     }
 }
 

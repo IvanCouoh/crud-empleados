@@ -13,7 +13,6 @@
                 //Conexión local - Descomentar si se va usar o comentarlo si no
                 self::$instancia = new PDO('mysql:host=localhost;dbname=empleados', 'root', '', $opcionesPDO);
                 
-                echo "Conexión exitosa";
             }
             return self::$instancia;
         }
