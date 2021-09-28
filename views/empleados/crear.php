@@ -25,7 +25,7 @@
           <input type="datetime" name="fecha" value="<?= $fecha_actual?>">
         </div>
 
-        <input name="" id="" class="btn btn-success" type="submit" value="Ingresar empleado">
+        <input name="" id="" class="btn btn-outline-success" type="submit" value="Ingresar empleado">
         </form>
     </div>
     <div class="card-footer text-muted">
