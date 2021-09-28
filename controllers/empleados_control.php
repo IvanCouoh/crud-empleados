@@ -17,6 +17,12 @@ class empleadosControl{
         include_once("views/empleados/crear.php");
 
     }
+    
+    public function inicio(){
+
+        $empleados=Empleado::consultar();
+        include_once("views/empleados/inicio.php");
+    }
 }
 
 ?>
