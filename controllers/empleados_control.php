@@ -47,9 +47,9 @@ class empleadosControl{
 
        $empleado = (Empleado::buscar($id));
         
-
+    
        include_once("views/empleados/editar.php");
-       header("location:./?controller=empleados&action=inicio");
+       
        
      }
 
