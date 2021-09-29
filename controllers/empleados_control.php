@@ -39,6 +39,7 @@ class empleadosControl{
            $nombre=$_POST['nombre'];
            $correo=$_POST['correo'];
            Empleado::editar($id,$nombre,$correo);
+           header("location:./?controller=empleados&action=inicio");
            
        }
 
