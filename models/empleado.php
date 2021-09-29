@@ -39,6 +39,22 @@ class Empleado{
         $sql->execute(array($id));
     }
 
+    public static function buscar($id){
+        $BDconexion= conexion::crearInstancia();
+        $sql=$BDconexion->prepare("select * from empleados where id=?");
+        $sql->execute(array($id));
+        $empleado=$sql->fetch();
+        return new Empleado($empleado['id'],$empleado['nombre'],$empleado['correo'],$empleado['fecha']);
+
+         
+
+
+
+    }
+
+
+
+
 }
 
 ?>

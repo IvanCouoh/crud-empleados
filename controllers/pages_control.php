@@ -10,6 +10,12 @@ class PagesControl{
         include_once("views/pages/error.php");
         
     }
+
+    public function editar(){
+        include_once("views/pages/editar.php");
+
+    }
+
 }
 
 ?>
