@@ -30,6 +30,30 @@ class empleadosControl{
         Empleado::borrar($id);
         header("location:./?controller=empleados&action=inicio");
     }
+
+     public function editar(){
+      
+
+       if($_POST){
+           $id=$_POST['id'];
+           $nombre=$_POST['nombre'];
+           $correo=$_POST['correo'];
+           Empleado::editar($id,$nombre,$correo);
+           header("location:./?controller=empleados&action=inicio");
+           
+       }
+
+
+       $id=$_GET['id'];
+
+       $empleado = (Empleado::buscar($id));
+        
+    
+       include_once("views/empleados/editar.php");
+       
+       
+     }
+
 }
 
 ?>
