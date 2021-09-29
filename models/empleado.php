@@ -46,11 +46,19 @@ class Empleado{
         $empleado=$sql->fetch();
         return new Empleado($empleado['id'],$empleado['nombre'],$empleado['correo'],$empleado['fecha']);
 
-         
+
+    }
+
+    public static function editar($id,$nombre,$correo){
+
+        $BDconexion= conexion::crearInstancia();
+        $sql=$BDconexion->prepare("UPDATE empleados SET  nombre=?, correo =? where id=?");
+        $sql->execute(array($nombre,$correo,$id));
 
 
 
     }
+
 
 
 

@@ -32,10 +32,9 @@
           <input type="datetime" name="fecha" value="<?= $fecha_actual?>">
         </div>
 
-        <input name="" id="" class="btn btn-outline-success" type="submit" value="Ingresar empleado">
+        <input name="" id="" class="btn btn-outline-success" type="submit" value="Editar empleado">
+        <a href="?controller=empleados&action=inicio" class="btn btn-outline-danger" > Cancelar </a>
         </form>
     </div>
-    <div class="card-footer text-muted">
-        Todos estos datos son protegidos, <por class=""></por>
-    </div>
+    
 </div>
