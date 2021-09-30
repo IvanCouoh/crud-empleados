@@ -25,8 +25,8 @@
           <input type="datetime" name="fecha" value="<?= $fecha_actual?>">
         </div>
 
-        <input name="" id="" class="btn btn-outline-success" type="submit" value="Ingresar empleado">
-        <a href="?controller=empleados&action=inicio" class="btn btn-outline-danger" > Cancelar </a>
+        <input name="" id="" class="btn btn-success" type="submit" value="Ingresar empleado">
+        <a href="?controller=empleados&action=inicio" class="btn btn-danger" > Cancelar </a>
         </form>
     </div>
   
