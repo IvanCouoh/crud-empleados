@@ -1,6 +1,4 @@
 <?php
-
-
   class conexion{
     private static $instancia=NULL;
     public static function crearInstancia(){
@@ -18,7 +16,6 @@
         
         //Conexión local - Descomentar si se va usar o comentarlo si no
         // self::$instancia = new PDO('mysql:host=localhost;dbname=empleados', 'root', '', $opcionesPDO);
-          
       }
       return self::$instancia;
     }

@@ -1,4 +1,2 @@
 
-Error
-
-:sss
+Pagina no encontrada

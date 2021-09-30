@@ -24,18 +24,12 @@
                         <td>
                             <div class="btn-group" role="group" aria-label="">
                                 <a href="?controller=empleados&action=editar&id=<?php echo $empleado->id;?>" class="btn btn-warning" id=edit style= margin-left="2px">Editar</a>
-                
                                 <a href="?controller=empleados&action=borrar&id=<?php echo $empleado->id;?>" class="btn btn-danger">Borrar</a>
-
-                                
                             </div>
                         </td>
                     </tr>
                 <?php } ?>
             </tbody>
         </table>
-
-
     </div>
-    
 </div>

@@ -10,7 +10,6 @@
           <input readonly type="text" 
             class="form-control"  value="<?php echo $empleado-> id ?>"name="id" id="id" aria-describedby="helpId" placeholder="ID empleado">
         </div>
-        
 
         <div class="mb-3">
           <label for="nombre" class="form-label">Nombre:</label>

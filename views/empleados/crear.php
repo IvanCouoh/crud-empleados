@@ -29,5 +29,4 @@
         <a href="?controller=empleados&action=inicio" class="btn btn-danger" > Cancelar </a>
         </form>
     </div>
-  
 </div>
