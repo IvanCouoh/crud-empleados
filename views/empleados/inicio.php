@@ -1,6 +1,9 @@
-<a name="" id="" class="btn btn-outline-primary" href="?controller=empleados&action=crear" role="button">Agregar empleado</a>
-<tr>
-<table class="table">
+<div class="card">
+    <div class="card-header">
+    <a name="" id="" class="btn btn-primary" href="?controller=empleados&action=crear" role="button">Agregar empleado</a>
+    </div>
+    <div class="card-body">
+    <table class="table">
     <thead>
         <tr>
             <th>ID</th>
@@ -20,8 +23,9 @@
             
             <td>
             <div class="btn-group" role="group" aria-label="">
-                <a href="?controller=empleados&action=editar&id=<?php echo $empleado->id;?>" class="btn btn-outline-warning">Editar registro</a>
-                <a href="?controller=empleados&action=borrar&id=<?php echo $empleado->id;?>" class="btn btn-outline-danger">Borrar registro</a>
+                <a href="?controller=empleados&action=editar&id=<?php echo $empleado->id;?>" class="btn btn-warning" id=edit style= margin-left="2px">Editar</a>
+ 
+                <a href="?controller=empleados&action=borrar&id=<?php echo $empleado->id;?>" class="btn btn-danger">Borrar</a>
 
                 
             </div>
@@ -30,3 +34,13 @@
         <?php } ?>
     </tbody>
 </table>
+
+
+    </div>
+    
+</div>
+
+
+
+
+<tr>
