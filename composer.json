@@ -1,0 +1,15 @@
+{
+    "license": "proprietary",
+    "name": "angel/crud-empleados",
+    "description": "Git Actions with PHP",
+    "autoload": {
+        "psr-4": {
+            "Angel\\CrudEmpleados\\": "src/"
+        }
+    },
+    "authors": [{
+        "name": "AngelGarridoP",
+        "email": "ang31garr1d0@gmail.com"
+    }],
+    "require": {}
+}
