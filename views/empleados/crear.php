@@ -6,7 +6,7 @@
         <form action="" method="post">
 
         <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre Completo:</label>
+          <label for="nombre" class="form-label">Nombre:</label>
           <input required type="text"
             class="form-control" name="nombre" id="nombre" aria-describedby="helpId" placeholder="Agregar el nombre del empleado">
         </div>
