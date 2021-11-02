@@ -11,5 +11,8 @@
         "name": "AngelGarridoP",
         "email": "ang31garr1d0@gmail.com"
     }],
-    "require": {}
+    "require": {
+        "phpunit/phpunit": "^9.5",
+        "guzzlehttp/guzzle": "^7.4"
+    }
 }
