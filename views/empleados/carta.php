@@ -39,7 +39,10 @@ $fecha_actual = date("d M, Y");
 
 <body>
     <div style="text-align: justify">
-        <p style="text-align: right;">Mérida, Yucatán a <?= $fecha_actual ?></p>
+        <p style="text-align: right;">Mérida, Yucatán a <?= $fecha_actual ?>
+            <br>
+            <span><strong>Asunto: </strong> Carta de recomendación</span>
+        </p>
 
         A QUIEN CORRESPONDA:
         <p class="texto">
