@@ -16,7 +16,7 @@
 <nav class="navbar navbar-expand navbar navbar-dark bg-dark">
     <div class="nav navbar-nav">
 
-        <a class="nav-item nav-link" href="?controller=empleados&action=inicio"">Home</a>
+        <a class="nav-item nav-link" href="?controller=empleados&action=inicio">Home</a>
         <a class="nav-item nav-link" href="?controller=empleados&action=inicio">Empleados</a>
     </div>
 </nav>
