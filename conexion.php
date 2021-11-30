@@ -12,10 +12,10 @@
       if(!isset(self::$instancia)){
         $opcionesPDO[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
         //Conexión del servidor - Descomentar si se va usar o comentarlo si no
-        // self::$instancia = new PDO("pgsql:host=$rutaServidor;port=$puerto;dbname=$nombreBaseDeDatos", $usuario, $contraseña);
+        self::$instancia = new PDO("pgsql:host=$rutaServidor;port=$puerto;dbname=$nombreBaseDeDatos", $usuario, $contraseña);
         
         //Conexión local - Descomentar si se va usar o comentarlo si no
-        self::$instancia = new PDO('mysql:host=localhost;dbname=empleados', 'root', '', $opcionesPDO);
+        // self::$instancia = new PDO('mysql:host=localhost;dbname=empleados', 'root', '', $opcionesPDO);
       }
       return self::$instancia;
     }
