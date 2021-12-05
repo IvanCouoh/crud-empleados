@@ -14,9 +14,9 @@ class PruebaTest extends TestCase
         // $user->email('javiergmail.com');
 
         //valita la existencia de un correo
-        $this->assertEquals($user->setEmail(email:'javier@gmail.com'), 'javier@gmail.com');
+        $this->assertEquals($user->setEmail(email:'javiergmail.com'), 'javiergmail.com');
         
         //valita la existencia de un id
-        $this->assertEquals($user->setId(id:3), 3);
+        $this->assertEquals($user->setId(id:1), 1);
     }
 }
