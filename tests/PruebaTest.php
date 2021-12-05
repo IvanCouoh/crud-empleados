@@ -2,31 +2,21 @@
 
 use PHPUnit\Framework\TestCase;
 
+include './models/employee.php';
+
 class PruebaTest extends TestCase
 {
-
-
     /** @test **/
     public function Comprobar_las_consultas_por_Http()
     {
+        $user = new User();
 
-        $nombre = "javier";
-        $BDconexion= conexion::crearInstancia();
-        $res=$BDconexion->query("select * from empleados where id=2");
+        // $user->email('javiergmail.com');
 
-        $data = json_decode($res->getBody(), false);
-
-        $this->assertArrayHasKey('id', $data);
-        $this->assertArrayHasKey('nombre', $data);
-        $cliente = new GuzzleHttp\Client();
-
-        $res = $cliente->array([
-            $correo = "javier@gmail.com"
-        ]);
-    }
-
-    public function testFailure()
-    {
-        $this->assertIsString(null);
+        //valita la existencia de un correo
+        $this->assertEquals($user->setEmail(email:'javier@gmail.com'), 'javier@gmail.com');
+        
+        //valita la existencia de un id
+        $this->assertEquals($user->setId(id:3), 3);
     }
 }
