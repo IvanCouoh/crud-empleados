@@ -2,27 +2,31 @@
 
 use PHPUnit\Framework\TestCase;
 
-class PruebaTest extends TestCase {
+class PruebaTest extends TestCase
+{
 
 
-    /** @test **/
-    public function Comprobar_las_consultas_por_Http()
-    {
+    // /** @test **/
+    // public function Comprobar_las_consultas_por_Http()
+    // {
 
-        $BDconexion= conexion::crearInstancia();
+    //     // $nombre = "javier";
+    //     // $BDconexion= conexion::crearInstancia();
+    //     // $res=$BDconexion->query("select * from empleados where id=2");
 
-        $cliente = new GuzzleHttp\Client();
+    //     // $data = json_decode($res->getBody(), true);
 
-        $res = $BDconexion->query("select * from empleados where id = 1");
+    //     // $this->assertArrayHasKey('id', $data);
+    //     // $this->assertArrayHasKey('nombre', $data);
+    //     // $cliente = new GuzzleHttp\Client();
 
-        $data = json_decode($res -> getBody(), true);
+    //     // $res = $cliente->array([
+    //     //     $correo = "javier@gmail.com"
+    //     // ]);
+    // }
 
-        $this -> assertArrayHasKey('id', $data);
-        $this -> assertArrayHasKey('nombre', $data);
-    }
-
-    public function testFailure()
-    {
-        $this->assertIsString(null);
-    }
+    // public function testFailure()
+    // {
+    //     $this->assertIsString(null);
+    // }
 }
