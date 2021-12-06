@@ -19,7 +19,7 @@ class PruebaTest extends TestCase
         $this->assertEquals($user->testEmpleado(
             id: 1, 
             nombre: 'javier',
-            correo: 'javierg@mail.com',
+            correo: 'javier@gmail.com',
             fecha: '2021-12-10'
         ), 
         1);
