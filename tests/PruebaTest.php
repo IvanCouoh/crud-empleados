@@ -13,10 +13,18 @@ class PruebaTest extends TestCase
 
         // $user->email('javiergmail.com');
 
+        // $this->assertEquals($user->addData(id: 1, nombre: 'javier', correo: 'javier@gmail.com', fecha: '2021-12-10'), 1, 'javier', 'javiergmail.com', '2021-12-10');
+
         //valita la existencia de un correo
-        $this->assertEquals($user->setEmail(email:'javiergmail.com'), 'javiergmail.com');
-        
+        $this->assertEquals($user->testEmpleado(
+            id: 1, 
+            nombre: 'javier',
+            correo: 'javierg@mail.com',
+            fecha: '2021-12-10'
+        ), 
+        1);
+
         //valita la existencia de un id
-        $this->assertEquals($user->setId(id:1), 1);
+        // $this->assertEquals($user->setId(id:2), 2);
     }
 }
