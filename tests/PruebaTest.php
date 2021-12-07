@@ -18,7 +18,7 @@ class PruebaTest extends TestCase
         //valita la existencia de un correo
         $this->assertEquals($user->testEmpleado(
             id: 1, 
-            nombre: 'Javier',
+            nombre: '',
             correo: 'javier@gmail.com',
             fecha: '2021-12-10'
         ), 
