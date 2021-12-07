@@ -60,8 +60,8 @@ $fecha_actual = date("d M, Y");
         <div class="centrado">
             <p>FIRMA</p>
             <p>______________________________________</p>
-            UTM
-            Javier Iván Herrera Couoh <br>
+            UTM<br>
+            Javier Iván Herrera Couoh 
         </div>
     </div>
 
